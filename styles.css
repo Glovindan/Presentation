@@ -1,0 +1,151 @@
+/*Месиво из говна*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none
+}
+body {
+    /* background: url(img/4ddc4a1bfb254d429e655f59aed4492a.max-2000x1000.jpg) no-repeat top/100% fixed; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.background {
+    position: fixed;
+    margin-top: -10%;
+    width: 100%;
+    z-index: -1;
+}
+.background img {
+    width: 100%;
+    filter: brightness(25%);
+}
+
+.global-wrapper {
+    display: flex;
+    width: 60vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-wrapper {
+    text-align: center;
+    width: inherit;
+    background-color: #fff;
+    padding: 3vh 0;
+}
+.title {
+    font-size: min(45pt, 5vw);
+}
+
+.intro-wrapper {
+    width: 100%;
+    margin-bottom: 2vh;
+}
+.intro {
+    font-size: 18pt;
+    color: #fff;
+    width: 70%;
+    margin: 5vh 0;
+}
+
+.outro-wrapper {
+    width: 100%;
+    margin: 5vh 0;
+    text-align: right;
+}
+.outro {
+    font-size: 18pt;
+    color: #fff;
+    margin-left: 30%;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 1vh;
+    font-size: 15pt;
+}
+
+.button-white {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: 14.5vw;
+    width: inherit;
+    transition: .1s;
+}
+.button-white:hover {
+    transform: scale(1.01);
+    transition: .1s;
+}
+.button-white:active {
+    transform: scale(0.99);
+    transition: .1s;
+}
+
+.button-black {
+    color: white;
+    display: flex;
+    height: 14.5vw;
+    width: inherit;
+    flex-direction: row-reverse;
+    opacity: 75%;
+    transition: .1s;
+}
+.button-black:hover {
+    transform: scale(1.01);
+    transition: .1s;
+}
+.button-black:active {
+    transform: scale(0.99);
+    transition: .1s;
+}
+
+.button-white img{
+    filter: invert(1);
+    margin-left: -3.5%;
+}
+.button-black img {
+    margin-left: 3.5%;
+}
+.button-square-white {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+}
+.button-square-black {
+    height: 100%;
+    width: 70%;
+    background-color: black;
+}
+
+.button-clipart {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 30%;
+}
+.button-clipart img {
+    width: 100%;
+}
+
+.button-text{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: min(30pt, 5vw);
+}
